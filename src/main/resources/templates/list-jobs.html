@@ -10,7 +10,9 @@
 
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
-    <h3 th:text="${jobs.size()} + ' Result(s)'">Results</h3>
+   <!-- Added field in ListController class so this is no longer needed
+    <h3 th:text="${jobs.size()} + ' Result(s)'"></h3> -->
+    <h3 th:text="${results}"></h3>
 
     <!-- TODO #3 - Use the same list display from search.html -->
 
